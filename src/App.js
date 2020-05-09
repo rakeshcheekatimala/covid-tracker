@@ -16,10 +16,9 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1> App</h1>
       <Cards data={data} />
+      <CountryPicker xs={12} md={6} />
       <Chart />
-      <CountryPicker />
     </div>
   );
 };

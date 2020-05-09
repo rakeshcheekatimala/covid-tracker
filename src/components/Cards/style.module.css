@@ -11,3 +11,14 @@
   margin-bottom: 1rem !important;
 }
 
+.infected {
+  border-bottom: 1.5rem solid var(--color-infected);
+}
+
+.recovered {
+  border-bottom: 1.5rem solid var(--color-recovered);
+}
+
+.deaths {
+  border-bottom: 1.5rem solid var(--color-deaths);
+}

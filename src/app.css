@@ -17,8 +17,8 @@ html {
 
 :root{
 	--color-primary:#eb2f64;
-	--color-primary-light: #FF3366;
-	--color-primary-dark:#BA265D;
+	--color-primary-light: #E0FFFA;
+	--color-primary-dark:#E0FFF0;
 	--color-grey-light-1: #faf9f9;
 	--color-grey-light-2: #f4f2f2;
 	--color-grey-light-3: #f0eeee;
@@ -30,5 +30,9 @@ html {
 	--color-white:#fff;
 	--border-line:1px solid var(--color-grey-light-2);
 	--shadow-light:0 2rem 5rem rgba(0, 0, 0, 0.6);
-	--shadow-dark:0 2rem 5rem rgba(0, 0, 0, 0.3);
+  --shadow-dark:0 2rem 5rem rgba(0, 0, 0, 0.3);
+  
+  --color-infected:yellow;
+  --color-recovered:blue;
+  --color-deaths:red;
 }

@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const StyledCard = styled(Grid)`
   border-radius: 0.5rem;
-  box-shadow: 0.75rem 0.75rem 0.6rem var(--color-grey-dark-1) ;
+  box-shadow: 0.5rem 0.5rem 0.6rem var(--color-grey-dark-1) ;
   margin:1rem 2rem;
   font-size:1.4rem;
 `;
