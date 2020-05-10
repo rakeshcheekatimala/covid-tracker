@@ -23,8 +23,9 @@ const styles = (theme) => ({
 
 const CountryPicker = (props) => {
   const [countries, setCountries] = useState([]);
-  const [country, selectedCountry] = useState("global");
+  const [country, selectedCountry] = useState(props.country);
   const { classes } = props;
+
   useEffect(() => {
     const loadData = async () => {
       setCountries(await fetchCountries());
