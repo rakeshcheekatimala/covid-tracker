@@ -34,7 +34,7 @@ const App = () => {
           country={country}
         />
       ) : (
-          <span>Fetching Data about country</span>
+          <div>Fetching Data about country</div>
         )}
       <Chart data={data} country={country} />
     </div>
