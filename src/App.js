@@ -9,10 +9,10 @@ const App = () => {
 
   useEffect(() => {
     async function loadData() {
-      let result = await fetchData();
-      setData(result);
       let country = await getGeoInfo();
       setCountry(country);
+      let result = await fetchData(country);
+      setData(result);
     }
     loadData();
   }, []);
