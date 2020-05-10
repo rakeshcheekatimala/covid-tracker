@@ -31,10 +31,12 @@ const CountryPicker = (props) => {
       console.log(countries);
     };
     loadData();
-  }, [countries]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const countryChangeHandler = (e) => {
     selectedCountry(e.target.value);
+    props.onCountryChange(e.target.value === "global" ? "" : e.target.value);
   };
 
   return (
@@ -43,7 +45,7 @@ const CountryPicker = (props) => {
         <InputLabel htmlFor="country" className={classes.label}>
           Choose Country:
         </InputLabel>
-        <StyledSelect value={country} onChange={countryChangeHandler}>
+        <StyledSelect value={country} onChange={(e) => countryChangeHandler(e)}>
           <MenuItem key="global" value="global">
             Global
           </MenuItem>
